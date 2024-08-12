@@ -30,7 +30,9 @@ const InputText: React.FC<InputTextProps> = ({
 
   return (
     <div className="input-container">
-      <label htmlFor={label}>{label}</label>
+      <label htmlFor={label}>{label}
+      {required ? <span className="text-danger">*</span> : <></>}
+      </label>
       <input
         id={label}
         type="text"
