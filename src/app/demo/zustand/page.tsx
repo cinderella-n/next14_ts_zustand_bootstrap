@@ -1,7 +1,7 @@
 // pages/index.tsx
 'use client'
 import react from 'react'
-import { useStore } from '@/stores/useStore';
+import { useStore } from '@/stores/count/useCountStore';
 
 const Home = () => {
   const { count, increment, decrement } = useStore();

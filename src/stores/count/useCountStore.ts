@@ -1,11 +1,6 @@
 // stores/useStore.ts
 import create from 'zustand';
-
-interface StoreState {
-  count: number;
-  increment: () => void;
-  decrement: () => void;
-}
+import {StoreState} from './countType'
 
 export const useStore = create<StoreState>((set) => ({
   count: 0,
